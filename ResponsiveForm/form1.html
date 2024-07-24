@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signin Form Page</title>
+    <link rel="stylesheet" href="form1.css">
+</head>
+
+<body>
+    <div id="particles-js" class="snow"></div>
+
+    <main>
+        <div class="left-side"></div>
+
+        <div class="right-side">
+            <!-- Sign In Form -->
+            <form id="signin-form">
+                <div class="btn-group">
+                    <button class="btn">
+                        <img class="logo" src="google.png" alt="Google Logo" />
+                        <span>Sign in with Google</span>
+                    </button>
+                    <button class="btn">
+                        <img class="logo" src="apple.png" alt="Apple Logo" />
+                        <span>Sign in with Apple</span>
+                    </button>
+                </div>
+
+                <div class="or">OR</div>
+
+                <label for="signin-email">Email</label>
+                <input type="text" placeholder="Enter Email" name="signin-email" required />
+
+                <label for="signin-password">Password</label>
+                <input type="password" placeholder="Enter Password" name="signin-password" required />
+
+                <button type="submit" class="login-btn">Sign in</button>
+                <div class="links">
+                    <a href="#">Forgot password?</a>
+                    <a href="#" id="show-signup">Do not have an account?</a>
+                </div>
+            </form>
+
+            <!-- Sign Up Form -->
+            <form id="signup-form" class="hidden">
+                <label for="signup-email">Email</label>
+                <input type="text" placeholder="Enter Email" name="signup-email" required />
+
+                <label for="signup-password">Password</label>
+                <input type="password" placeholder="Create Password" name="signup-password" required />
+
+                <button type="submit" class="login-btn">Sign up</button>
+                <div class="links">
+                    <a href="#" id="show-signin">Already have an account?</a>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script src="form1.js"></script>
+</body>
+
+</html>
